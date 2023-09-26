@@ -91,21 +91,22 @@ body{
 # Why Us
 --------------------------------------------------------------*/
 #why-us{
-  background-color: antiquewhite;
+  background-color:#FFE4C4;
 }
 
 .why-us .box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
-  background: #1a1814;
+  /* background: #1a1814; */
+  background: white;
 }
 
 .why-us .box span {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #cda45e;
+  color:red;
 }
 
 .why-us .box h4 {
@@ -113,35 +114,39 @@ body{
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(9, 9, 9, 0.8);
 }
 
 .why-us .box p {
-  color: #aaaaaa;
+  color: #3e3838;
   font-size: 15px;
   margin: 0;
   padding: 0;
 }
 
 .why-us .box:hover {
-  background: #c79006;
+  /* background: #5b574e; */
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  /* background: black;
+  color: white; */
 }
 
-.why-us .box:hover span,
+/* .why-us .box:hover,
 .why-us .box:hover h4,
 .why-us .box:hover p {
-  color: #fff;
+  color: red;
+} */
+
+.why-us .box:hover span{
+  color: black;
 }
-
-
 
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 #contact{
-  background-color: antiquewhite;
+  background-color: rgb(249, 249, 249);
 }
 
 .contact .info-item {
@@ -159,7 +164,7 @@ body{
   font-size: 24px;
   line-height: 0;
   color: #fff;
-  background: var(--color-primary);
+  background:  #df1529;
   border-radius: 50%;
   margin-right: 15px;
 }
@@ -270,10 +275,12 @@ body{
   /* color: #fff; */
   transition: 0.4s;
   border-radius: 50px;
+  background: #ec2727;
+  color: white;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ec2727;
+  opacity: 0.77;
 }
 
 @keyframes animate-loading {
@@ -291,30 +298,15 @@ body{
 /*--------------------------------------------------------------
 # Scroll top button
 --------------------------------------------------------------*/
-.scroll-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 99999;
-  background: var(--color-primary);
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-
 .scroll-top i {
-  font-size: 24px;
-  color: #fff;
+  font-size: 29px;
+  color: #faf9f9;
   line-height: 0;
 }
 
 .scroll-top:hover {
-  background: #ec2727;
   color: #fff;
-}
+} 
 
 .scroll-top.active {
   visibility: visible;
@@ -335,7 +327,7 @@ body{
 #footer .footer-top {
   background: #0c0b09;
   border-top: 1px solid #37332a;
-  border-bottom: 1px solid #28251f;
+  /* border-bottom: 1px solid #28251f; */
   padding: 60px 0 30px 0;
 }
 
@@ -378,9 +370,10 @@ body{
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #cda45e;
+  /* background:red; */
   color: #fff;
   text-decoration: none;
+  border: solid 1px;
 }
 
 #footer .footer-top h4 {
@@ -389,6 +382,16 @@ body{
   color: #fff;
   position: relative;
   padding-bottom: 12px;
+}
+
+#footer .footer-top #top{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+#footer .footer-top #top:hover{
+  color: red;
 }
 
 #footer .footer-top .footer-links {
@@ -426,7 +429,7 @@ body{
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #cda45e;
+  /* color: red; */
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -455,14 +458,14 @@ body{
   background: none;
   font-size: 16px;
   padding: 0 20px 2px 20px;
-  background: #cda45e;
+  background: red;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #d3af71;
+  background: red;
 }
 
 #footer .copyright {
